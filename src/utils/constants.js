@@ -8,3 +8,7 @@ export const options = {
     }
   };
   
+export const image_tmdb_cdn="https://image.tmdb.org/t/p/w500/"
+export const popularMovies_api="https://api.themoviedb.org/3/movie/popular"
+export const nowplayingMovies_api="https://api.themoviedb.org/3/movie/now_playing"
+export const topRatedMovies_api="https://api.themoviedb.org/3/movie/top_rated"

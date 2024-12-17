@@ -22,7 +22,8 @@
     - fetch data for trailer video
     - update store for trailer video data
     - embedded the video and make it autoplay and mute 
-    
+    - secondary container with movielist with moviecard 
+    - custom hooks to fetch movies - nowplaying, popular, top rated
 
 
 

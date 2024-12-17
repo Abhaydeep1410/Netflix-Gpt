@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { options } from "../utils/constants";
+import { nowplayingMovies_api, options } from "../utils/constants";
 import { useDispatch } from "react-redux";
 import { addNowPlayingMovies } from "../utils/movieSlice";
 
@@ -7,10 +7,7 @@ import { addNowPlayingMovies } from "../utils/movieSlice";
 const useNowPlaying = () => {
   const dispatch = useDispatch();
   const getData = async () => {
-    const data = await fetch(
-      "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1",
-      options
-    );
+    const data = await fetch(nowplayingMovies_api, options);
     const json = await data.json();
     dispatch(addNowPlayingMovies(json.results));
   };
